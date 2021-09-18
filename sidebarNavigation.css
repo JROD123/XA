@@ -1,6 +1,16 @@
-body{position:relative}
+body{position:relative}.overlay,
 .sideMenu{position:fixed;bottom:0}
-.overlay{top:0;left:0;opacity:0;right:0%;margin:auto;background-color:rgba(0, 0, 0, 0.525);z-index:998;transition:all ease .4s}
+.overlay{
+  top:0;
+  left:0;
+  opacity:0;
+  right:0%;
+  margin:auto;
+  background-color:rgba(0, 0, 0, 0.825);
+  z-index:998;
+  transition:all ease .4s;
+  pointer-events:none;
+}
 
 .sideMenu,.sidebarNavigation{z-index:999;margin-bottom:0}
 
@@ -359,7 +369,7 @@ padding-bottom: 8px;
 
 .navbar-inverse{
     border-bottom: none;
-    background-color: #073725;
+    background-color: #07372500;
 }
 
 .navbar-inverse .navbar-brand{
@@ -554,10 +564,11 @@ a:hover{
   border-radius: 50px;
   border:2px solid rgb(255, 255, 255);
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   background-color: #f47521;
-  width: 110px;
-  margin-top: 10px;
-  height: 28px;
+  width: 130px;
+  margin-top: -10px;
+  height: 48px;
   margin-left: ;
   letter-spacing: 1.25px;
   line-height: 0px;
@@ -1550,12 +1561,18 @@ mb-3{
   .bodylogo-row{
     margin-top: 50px;
   }
+
+  .form-dollar{
+    max-width: 38%;
 }
 
 @media (max-width: 411px) {
   .bodylogo-row{
     margin-top: 35px;
   }
+
+  .form-dollar{
+    max-width: 40%;
 }
 
 @media (max-width: 375px) {
@@ -1589,6 +1606,9 @@ mb-3{
   .Help-row{
     display: none;
   }
+
+  .form-dollar{
+    max-width: 44%;
 }
 
 @media (max-width: 320px) {
@@ -1610,6 +1630,21 @@ mb-3{
 
   #bodylogo{
     height: 250px;
+  }
+
+  .form-dollar{
+    max-width: 50%;
+  }
+
+  .AboutVerbiage{
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .AboutVerbiage2{
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 120px;
   }
 
 }
